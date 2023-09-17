@@ -1,7 +1,8 @@
 import Topbar from './components/shared/Topbar';
 import LeftSidebar from './components/shared/LeftSidebar';
 import RightSidebar from './components/shared/RightSidebar';
-import { inter } from './layout';
+import { Inter } from "next/font/google";
+import Bottombar from './components/shared/Bottombar';
 
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
           </section>
           <RightSidebar />
         </main>
-        <Bottom />
+        <Bottombar />
       </body>
     </html>
   );
